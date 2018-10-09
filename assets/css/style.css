@@ -18,6 +18,10 @@
     margin-bottom: -30px;
 }
 
+body {
+    background-image: url("assets/images/crystalline_structure.jpg");
+}
+
 .instruct {
     font-family: 'Amatic SC', cursive;
     font-size: 30px;
@@ -71,6 +75,7 @@
 #matchThisNumber {
     padding: 10px;
     margin-right: -80px;
+    margin-left: -100px;
 }
 
 #startPoint {
@@ -85,7 +90,6 @@
 
 .btn {
     padding: 120px;
-    /* margin-left: 160px; */
     background: darkslateblue;
 }
 
