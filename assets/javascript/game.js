@@ -7,7 +7,7 @@ var startGame = function () {
 
     $(".btn").empty();
 
-    matchThisNumber = Math.floor(Math.random() * 80) + 20;
+    matchThisNumber = Math.floor(Math.random() * 60) + 40;
 
     $(".matchThisNumber").html("Match This Number: " + matchThisNumber);
 

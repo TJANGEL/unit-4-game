@@ -29,7 +29,7 @@
     </div>
     <div class="main-contaier">
         <div class="row">
-            <div class="instructions col-md-6">
+            <div class="instructions col-md-8">
                 <h2 class="instruct">INSTRUCTIONS</h2>
                 <p>
                     Each of the four crystals has a different value
@@ -47,7 +47,21 @@
                     When your total score goes above the randomized number, you lose!
                 </p>
             </div>
-            <div class="btn col-md-6">
+            <div class="numbers col-md-4">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="matchThisNumber">Match this Number: </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="startPoint">Your Number: </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="btn col-md-12">
                 <button type="button" class="btn btn-secondary">1</button>
                 <button type="button" class="btn btn-secondary">2</button>
                 <button type="button" class="btn btn-secondary">3</button>
@@ -55,20 +69,11 @@
             </div>
         </div>
         <div class="row">
-            <div class="matchThisNumber col-md-6">
-                
+            <div class="col-md-6">
+                <p id="win">WINS:</p>
             </div>
-
-            <div class="startPoint col-md-6">
-            
-            </div>
-        </div>
-        <div class="row">
-            <div id="win">
-            
-            </div>
-            <div id="loss">
-
+            <div class="col-md-6">
+                <p id="loss">LOSSES: </p>
             </div>
         </div>
 
