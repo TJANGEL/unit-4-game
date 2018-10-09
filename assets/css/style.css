@@ -1,3 +1,7 @@
+html {
+    background-image: url("assets/images/crystalline_structure.png");
+}
+
 .jumbotron {
     background-color: darksalmon;
     margin-top: -70px;
@@ -16,10 +20,6 @@
     font-family: 'Indie Flower', cursive;
     font-size: 30px;
     margin-bottom: -30px;
-}
-
-body {
-    background-image: url("assets/images/crystalline_structure.jpg");
 }
 
 .instruct {
@@ -53,6 +53,7 @@ body {
     margin-left: 30px;
     margin-right: 30px;
     margin-bottom: 15px;
+    border-radius: 5px;
 }
 
 #loss {
@@ -61,6 +62,7 @@ body {
     padding-left: 20px;
     margin-left: 30px;
     margin-right: 30px;
+    border-radius: 5px;
 }
 
 .numbers {
@@ -75,22 +77,39 @@ body {
 #matchThisNumber {
     padding: 10px;
     margin-right: -80px;
-    margin-left: -100px;
+    margin-left: -160px;
 }
 
 #startPoint {
     padding: 10px;
-    margin-left: -720px;
+    margin-left: -740px;
 }
 
 .crystals {
-    margin-left: 350px;
+    margin-left: 320px;
     margin-bottom: 40px;
 }
 
 .btn {
     padding: 120px;
-    background: darkslateblue;
+    border: 5px solid darksalmon;
+}
+
+#first {
+    background-image: url(/assets/images/blue-crystal.png);
+
+}
+
+#second {
+    background-image: url(/assets/images/green-crystal.jpg);
+}
+
+#third {
+    background-image: url(/assets/images/purple-crystal.jpg);
+}
+
+#fourth {
+    background-image: url(/assets/images/red-crystal.JPG);
 }
 
 .footer {
