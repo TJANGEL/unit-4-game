@@ -96,20 +96,19 @@ html {
 }
 
 #first {
-    background-image: url(/assets/images/blue-crystal.png);
-
+    background-image: url("http://i66.tinypic.com/67495v.jpg");
 }
 
 #second {
-    background-image: url(/assets/images/green-crystal.jpg);
+    background-image: url("http://i68.tinypic.com/35jxls3.jpg");
 }
 
 #third {
-    background-image: url(/assets/images/purple-crystal.jpg);
+    background-image: url("http://i65.tinypic.com/1235or4.jpg");
 }
 
 #fourth {
-    background-image: url(/assets/images/red-crystal.JPG);
+    background-image: url("http://i66.tinypic.com/2dlr76d.jpg");
 }
 
 .footer {
