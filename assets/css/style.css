@@ -1,11 +1,17 @@
+html,
 body {
-    /* background-image: url("http://i63.tinypic.com/xasaq0.jpg"); */
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .jumbotron {
     background-color: darksalmon;
     margin-top: -70px;
     border-bottom: 5px solid aquamarine;
+    width: 100%;
 }
 
 .display-4 {
@@ -120,9 +126,12 @@ body {
     clear: both;
     font-family: 'Amatic SC', cursive;
     background: darksalmon;
+    padding-bottom: 5px;
 }
 
 @media  only screen and (max-width: 980px) {
+
+    
 
 }
 
@@ -132,4 +141,52 @@ body {
 
 @media only screen and (max-width: 640px) {
 
+    .jumbotron {
+        text-align: center;
+    }
+
+    .instructions {
+        margin: 0 auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .tally {
+        margin-left: 0px
+    }
+
+    #matchThisNumber {
+        float: left;
+        margin-left: -20px;
+        margin-right: 0px;
+    }
+
+    #startPoint {
+        float: left;
+        margin-left: -20px;
+    }
+
+    button {
+        margin: 0 auto;
+        float: left;
+    }
+
+    #first,
+    #second,
+    #third,
+    #fourth {
+        width: 50px;
+        height: 50px;
+    }
+
+    #first {
+        margin-right: 0px;
+    }
+    #second{
+        margin-left: 0px;
+    }
+    #third,
+    #fourth {
+        float: left;
+    }
 }

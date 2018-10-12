@@ -7,13 +7,13 @@ var startGame = function () {
 
 $(".btn").empty();
 
-matchThisNumber = Math.floor(Math.random() * 69) + 30;
+matchThisNumber = Math.floor(Math.random() * 100) + 20;
 
 $("#matchThisNumber").html('Match This Number: ' + matchThisNumber);
 
 for (var i = 0; i < 4; i++) {
 
-    var randomValue = Math.floor(Math.random() * 9) + 1;
+    var randomValue = Math.floor(Math.random() * 10) + 2;
     var crystal = $(".btn");
         crystal.attr({
             "class": 'btn',
