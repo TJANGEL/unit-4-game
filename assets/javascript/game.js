@@ -18,12 +18,13 @@ for (var i = 0; i < 4; i++) {
         crystal.attr({
             "class": 'btn',
             "data-random": randomValue
-        })
+        });
+    
     $(".btn").append(crystal);
 }
 
 $("#startPoint").html('Your Number: ' + startPoint);
-}
+};
 
 startGame();
 

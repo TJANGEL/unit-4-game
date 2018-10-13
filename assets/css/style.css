@@ -130,12 +130,68 @@ body {
 }
 
 @media  only screen and (max-width: 980px) {
+    .crystals {
+        margin: 0 auto;
+        margin-left: 120px;
+        margin-bottom: 20px;
+    }
 
-    
+    .instructions {
+        margin: 0 auto;
+        margin-left: 10px;
+    }
 
+    #matchThisNumber {
+        margin: 0 auto;
+        margin-left: -120px;
+    }
+
+    #startPoint {
+        margin: 0 auto;
+    }
 }
 
 @media only screen and (max-width: 768px) {
+    .instructions {
+        margin: 0 auto;
+        margin-left: 10px;
+        margin-right: -10px;
+    }
+
+    .tally {
+        margin: 0 auto;
+        float: left;
+    }
+
+    .numbers {
+        margin: 0 auto;
+        margin-left: 80px;
+    }
+
+    .crystals {
+        margin: 0 auto;
+    }
+    #first {
+        margin-right: 40px;
+        margin-left: 110px;
+        margin-bottom: 20px;
+    }
+
+    #second {
+       margin-right: 40px;
+       margin-bottom: 20px;
+    }
+
+    #third {
+        margin-left: 110px;
+        margin-right: 40px;
+        margin-bottom: 20px;
+    }
+
+    #fourth {
+        margin-bottom: 20px;
+    }
+
 
 }
 
@@ -155,6 +211,10 @@ body {
         margin-left: 0px
     }
 
+    .numbers {
+        margin: 0 auto;
+    }
+
     #matchThisNumber {
         float: left;
         margin-left: -20px;
@@ -164,6 +224,14 @@ body {
     #startPoint {
         float: left;
         margin-left: -20px;
+    }
+
+    #first {
+        margin-left: 90px;
+    }
+
+    #third {
+        margin-left: 90px;
     }
 
     #first,
