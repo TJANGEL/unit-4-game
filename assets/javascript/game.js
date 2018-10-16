@@ -20,7 +20,7 @@ for (var i = 0; i < 4; i++) {
             "data-random": randomValue
         });
     
-    $(".btn").append(crystal);
+    $("btn").append(crystal);
 }
 
 $("#startPoint").html('Your Number: ' + startPoint);
@@ -29,6 +29,7 @@ $("#startPoint").html('Your Number: ' + startPoint);
 startGame();
 
 $(document).on("click", ".btn", function () {
+
     var crystalValue = parseInt($(this).attr('data-random'));
 
     startPoint += crystalValue;
