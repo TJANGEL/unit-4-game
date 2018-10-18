@@ -1,59 +1,63 @@
 var matchThisNumber;
-var win = 0;
 var loss = 0;
+var win = 0;
 var startPoint = 0;
 
-var startGame = function () {
+var resetAndStart = function () {
 
-$(".btn").empty();
+    $(".crystals").empty();
 
-matchThisNumber = Math.floor(Math.random() * 100) + 20;
+    matchThisNumber = Math.floor(Math.random() * 100) + 20;
 
-$("#matchThisNumber").html('Match This Number: ' + matchThisNumber);
+    $("#matchThisNumber").html('Match This Number: ' + matchThisNumber);
 
-for (var i = 0; i < 4; i++) {
+    for (var i = 0; i < 4; i++) {
 
-    var randomValue = Math.floor(Math.random() * 10) + 2;
-    var crystal = $(".btn");
+        var id = ["first", "second", "third", "fourth"];
+        var random = Math.floor(Math.random() * 10) + 2;
+
+        var crystal = $("<div>");
         crystal.attr({
-            "class": 'btn',
-            "data-random": randomValue
+            "class": 'crystal',
+            "data-random": random,
+            "id": id[i]
         });
-    
-    $("btn").append(crystal);
+
+        $(".crystals").append(crystal);
+    }
+
+    $("#startPoint").html("Total Score: " + startPoint);
+
 }
 
-$("#startPoint").html('Your Number: ' + startPoint);
-};
+resetAndStart();
 
-startGame();
+$(document).on('click', ".crystal", function () {
 
-$(document).on("click", ".btn", function () {
+    var num = parseInt($(this).attr('data-random'));
 
-    var crystalValue = parseInt($(this).attr('data-random'));
+    startPoint += num;
 
-    startPoint += crystalValue;
-
-    $("#startPoint").html('Your Number: ' + startPoint);
+    $("#startPoint").html("Total Score: " + startPoint);
 
     if (startPoint > matchThisNumber) {
 
-        loss++
+        loss++;
+
         $("#loss").html("LOSSES: " + loss);
 
         startPoint = 0;
 
-        startGame();
+        resetAndStart();
 
     } else if (startPoint === matchThisNumber) {
 
         win++;
+
         $("#win").html("WINS: " + win);
 
         startPoint = 0;
 
-        startGame();
+        resetAndStart();
     }
-
-    console.log(crystalValue);
 });
