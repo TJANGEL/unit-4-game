@@ -42,6 +42,8 @@ body {
     font-size: 24px;
     font-family: 'Indie Flower', cursive;
     float: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .tally {
@@ -92,14 +94,23 @@ body {
 }
 
 .crystals {
-    margin-left: 250px;
-    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
 }
 
-.btn {
+.crystal {
+    border: 1px solid green;
+    height: 200px;
+    width: 200px;
     padding: 120px;
     border: 5px solid darksalmon;
-}
+    border-radius: 5px;
+    margin-bottom: 30px;
+    margin-right: 5px;
+    margin-left: 5px;
+} 
 
 #first {
     background-image: url("http://i66.tinypic.com/67495v.jpg");
@@ -129,6 +140,8 @@ body {
     padding-bottom: 5px;
 }
 
+/* RESPONSIVENESS */
+/* 980px */
 @media  only screen and (max-width: 980px) {
     .crystals {
         margin: 0 auto;
@@ -151,6 +164,7 @@ body {
     }
 }
 
+/* 768px */
 @media only screen and (max-width: 768px) {
     .instructions {
         margin: 0 auto;
@@ -191,10 +205,9 @@ body {
     #fourth {
         margin-bottom: 20px;
     }
-
-
 }
 
+/* 640px */
 @media only screen and (max-width: 640px) {
 
     .jumbotron {
