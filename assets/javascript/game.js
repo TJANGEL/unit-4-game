@@ -38,7 +38,7 @@ $(document).on('click', ".crystal", function () {
 
     startPoint += num;
 
-    $("#startPoint").html("Total Score: " + startPoint);
+    $("#startPoint").html("Your Number: " + startPoint);
 
     if (startPoint > matchThisNumber) {
 
